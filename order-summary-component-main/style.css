@@ -120,6 +120,9 @@ p {
   color: hsl(224, 23%, 55%);
   margin-bottom: 40px;
 }
+.secndary:hover {
+  color: hsl(223, 47%, 23%);
+}
 /* attribution
 --------------*/
 .attribution {
