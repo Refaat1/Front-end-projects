@@ -9,7 +9,9 @@
 body {
   font-family: "Red Hat Display", sans-serif;
 }
-
+h1 {
+  margin-bottom: 20px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -22,10 +24,13 @@ body {
 /* GENERAL STAYLING
 -----------*/
 .hero {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+.hero image {
+  width: 100%;
 }
 p {
-  color: #666;
+  color: hsl(223, 47%, 23%);
 }
 body {
   font-size: 16px;
@@ -36,10 +41,13 @@ body {
 
 .container {
   position: absolute;
-  width: 450px;
-  margin: 2em auto;
+  width: 420px;
+  /* margin: 2em auto; */
   background-color: white;
   overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   border-radius: 20px;
   top: 40%;
   left: 50%;
@@ -47,9 +55,9 @@ body {
 }
 .attribution {
   position: absolute;
-  top: 72%;
+  top: calc(320px + 40%);
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 393%);
 }
 .card {
   text-align: center;
@@ -59,18 +67,29 @@ body {
   grid-template-columns: 15px 0 3fr 1.1fr 1fr;
   padding: 10px;
   background-color: #f3f5ff;
-  margin: 20px auto;
   margin-top: 30px;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   justify-content: flex-start;
-  font-size: 15px;
+  font-size: 16px;
+}
+.plan p {
+  font-size: 13px;
+}
+.plan a:visited {
+  color: blue;
+}
+.plan a:hover {
+  text-decoration: none;
+  color: #766cf1;
 }
 .plan a {
   align-self: center;
   grid-area: "change";
   grid-column: 5/6;
+  font-weight: 900;
+  font-size: 14px;
 }
 .primary:hover {
   background-color: #766cf1;
@@ -85,26 +104,40 @@ body {
 }
 .card {
   width: 80%;
-  margin: 0 auto;
+  margin-left: 10%;
 }
 .btn {
   cursor: pointer;
-  margin: 20px auto;
-  font-weight: 900;
-  font-size: small;
+  font-size: medium;
+  font-weight: bolder;
 }
 .primary {
   color: white;
   background-color: #382ae1;
-  padding: 17px;
+  padding: 18px;
   border-radius: 10px;
   margin-top: 40px;
+  margin-bottom: 20px;
   /* offset-x | offset-y | blur-radius | color */
   box-shadow: -1px 15px 10px rgba(0, 0, 0, 0.15);
   /* box-shadow: 3px 3px 3px red, -1em 0 0.4em olive; */
+  transition: background-color 0.2s;
 }
 
 .secndary {
   color: #666;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1400px) {
+  .container {
+    width: 350px;
+  }
+  .plan {
+    grid-template-columns: 15px 30px 3fr 1.1fr 1fr;
+  }
+  .attribution {
+    width: 250px;
+    top: calc(290px + 40%);
+  }
 }
