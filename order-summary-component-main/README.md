@@ -10,6 +10,8 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
+## To preview Site
+## Go To This link: https://refaat1.github.io/Front-end-projects/ 
 ## The challenge
 
 Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
