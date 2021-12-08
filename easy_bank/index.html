@@ -23,6 +23,15 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+    .hero__images{
+      background-image: url("images/bg-intro-mobile.svg");
+    }
+    .hero__images:after{background-image: url("images/image-mockups.png");}
+    @media (min-width:40em){
+      .hero__images:before {
+        background-image: url("/images/bg-intro-desktop.svg");
+      }
+    }
   </style>
 </head>
 
