@@ -1,0 +1,61 @@
+.second-sec {
+  text-align: center;
+  background-color: $notveryLightGray;
+  padding-bottom: 6.25rem;
+  h1 {
+    color: $darkBlue;
+  }
+  p {
+    color: $grayishBlue;
+  }
+  & .container--pall > :nth-child(1) {
+    padding-top: 6.5rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1.75rem;
+  }
+  & .container--pall > :nth-child(2) {
+    padding-top: 0;
+    margin-bottom: 65px;
+    @include breakpoint-up(large) {
+      width: 60%;
+    }
+  }
+  div[class*="flx-"] {
+    img {
+      padding-bottom: 1.875rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  // flex
+  .container-flx {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    img {
+      text-align: center;
+    }
+  }
+  .container-flx > * {
+    margin-right: 1.25rem;
+    flex: 1 1;
+  }
+  // .container-flx > {
+  // }
+
+  @include breakpoint-up(large) {
+    text-align: left;
+  }
+}
